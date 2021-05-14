@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final</title>
+    <link rel="stylesheet" href="finalproject.css">
+
+    <style>
+        *{list-style: none;
+        text-decoration: none;
+    padding: 0;
+margin: 0;
+box-sizing: border-box;}
+
+nav{
+    width: 100%;
+    height: 60px;
+    background: rgb(7, 2, 71);
+}
+
+nav ul{float:right;
+    margin-right: 30px;}
+
+
+nav ul li{display: inline-block;
+margin-right: 10px;
+line-height: 60px;
+}
+
+
+nav ul li a{
+        color: #ffff;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 7px 15px;
+        border-radius: 5px;
+    }
+
+    a.active,a:hover{background:rgb(5, 9, 233);transition: .6s}   
+    
+    .checkbtn{
+        font-size: 30px;
+        color: white;
+        float: right;
+        margin: 13px 20px 0 0;
+        cursor: pointer;
+        display: none;
+    }
+
+    #check{display: none;}
+
+
+    @media(min-width:1200px){
+
+/*Extra large Device*/
+}
+
+@media(min-width:992px) and (max-width:1199px){
+
+/*large Device*/
+}
+
+@media(min-width:768px) and (max-width:991px){
+
+/*Medium Device*/
+}
+
+@media(min-width:576px) and (max-width:767px){
+/* Small Device*/
+.checkbtn{
+    display: block;
+}
+#check:checked~ul{
+        left: 0;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(2, 34, 194);
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+    }
+
+    nav ul li{
+        display: block;
+        margin:50px 0; 
+        line-height: 30px;
+    }
+    a:hover,a.active{
+        color: #062236;
+    background: none;}
+
+
+}
+@media(max-width:575px){
+/*Extra Small Device*/
+.checkbtn{
+    display: block;
+}
+#check:checked~ul{
+        left: 0;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(73, 62, 62);
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+    }
+
+    nav ul li{
+        display: block;
+        margin:50px 0; 
+        line-height: 30px;
+    }
+    a:hover,a.active{
+    color: #0082e6;
+    background: none;}
+
+
+
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+             <li><a href="second.html">About Me</a></li>
+             <li><a href="third.html">Academics</a></li>
+             <li><a href="fourth.html">Projects</a></li>
+             <li><a href="fifth.html">Training</a></li>
+             <li><a href="sixth.html">Contact</a></li>
+        </ul>
+    </nav>
+    <img src="mynewpic.jpg" style="padding-left: 640px; padding-top: 50px;">
+    <div style="padding-left: 660px; color: #fff;"><p style="font-size: 40px;font-style: oblique;padding-top: 9px;">Suparna Paul</p><br><p style="font-size: 20px; ">An Would be Engineer | Web Developer</p>
+    </div>
+    <hr><br><br>
+    <p style="font-size: 30px;padding-left:10px; color: #fff">I am Suparna Paul. This is my personal website and it includes my Educational details, seminars that I have attended, Workshops, hobbies and stuff like that. Know more about me from <a href="second.html">here.</a></p>
+
+    </body>
+</html>
